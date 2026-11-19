@@ -12,6 +12,10 @@ for (int i = 0; i < 7; i++)
     {
         temperaturaMin = temperaturaGiorno[i];
     }
+    if (temperaturaMax == 0 && i == 0)
+    {
+        temperaturaMax = temperaturaGiorno[i];
+    }
     if (temperaturaGiorno[i] > temperaturaMax)
     {
         temperaturaMax = temperaturaGiorno[i];
