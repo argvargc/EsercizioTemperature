@@ -8,14 +8,9 @@ for (int i = 0; i < 7; i++)
     Console.Write($"Inserisci la temperatura per il giorno {i}: ");
     temperaturaGiorno[i] = Convert.ToInt16(Console.ReadLine());
 
-    if (temperaturaMin == 0 && i == 0)
-    {
-        temperaturaMin = temperaturaGiorno[i];
-    }
-    if (temperaturaMax == 0 && i == 0)
-    {
-        temperaturaMax = temperaturaGiorno[i];
-    }
+    temperaturaMin = temperaturaGiorno[0];
+    temperaturaMax = temperaturaGiorno[0];
+    
     if (temperaturaGiorno[i] > temperaturaMax)
     {
         temperaturaMax = temperaturaGiorno[i];
